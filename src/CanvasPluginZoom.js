@@ -1,0 +1,23 @@
+import React from 'react';
+import { Box, Button, CheckBox } from 'grommet';
+import { Home, Add, Subtract } from 'grommet-icons';
+import { observer } from 'mobx-react';
+import HalBMap from '../hal/HalBMap';
+
+export const CanvasPluginZoom = observer(
+  ({ map, tracingMode, onChange, ...props }) => {
+    const halMap = new HalBMap(map);
+    return (
+      <Box margin='xsmall' gap='xsmall' align='center' {...props}>
+        <Button plain={false} icon={<Home />}
+          onClick={() => halMap.setFitView()} />
+        <Button plain={false} icon={<Add />}
+          onClick={() => halMap.zoomIn()} />
+        <Button plain={false} icon={<Subtract />}
+          onClick={() => halMap.zoomOut()} />
+        <CheckBox toggle label='跟踪模式' checked={tracingMode}
+          onChange={onChange} />
+      </Box>
+    );
+  }
+);
