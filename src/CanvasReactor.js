@@ -5,6 +5,7 @@ import HalBMap from '../hal/HalBMap';
 @observer
 export class CanvasReactor extends Component {
   componentDidUpdate() {
+    console.log(this.props.setFitView)
     if (!this.props.setFitView) return;
     const halMap = new HalBMap(this.props.__map__);
     setTimeout(() => halMap.setFitView(), 50);
