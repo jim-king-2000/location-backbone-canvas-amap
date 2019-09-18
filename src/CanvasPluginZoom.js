@@ -5,8 +5,8 @@ import { observer } from 'mobx-react';
 import HalBMap from '../hal/HalBMap';
 
 export const CanvasPluginZoom = observer(
-  ({ map, tracingMode, onChange, ...props }) => {
-    const halMap = new HalBMap(map);
+  ({ __map__, tracingMode, onChange, ...props }) => {
+    const halMap = new HalBMap(__map__);
     return (
       <Box margin='xsmall' gap='xsmall' align='center' {...props}>
         <Button plain={false} icon={<Home />}
