@@ -13,6 +13,8 @@ import { CanvasPositionMonitor } from './CanvasPositionMonitor';
 
 export const CanvasTrackMonitor = ({
   mapKey,
+  setFitView,
+  onUpdateEnd,
   simple,
   positions,
   tracks,
@@ -22,6 +24,8 @@ export const CanvasTrackMonitor = ({
 }) => (
   <CanvasPositionMonitor
     mapKey={mapKey}
+    setFitView={setFitView}
+    onUpdateEnd={onUpdateEnd}
     simple={simple}
     positions={positions}
     selectedThing={selectedThing}
