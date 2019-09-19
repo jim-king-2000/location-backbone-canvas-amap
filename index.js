@@ -1,6 +1,5 @@
 export * from './src/CanvasContainer';
 export * from './src/CanvasInformation';
-export * from './src/CanvasInformationTable';
 export * from './src/CanvasLineAndMark';
 export * from './src/CanvasMarkers';
 export * from './src/CanvasPluginZoom';
