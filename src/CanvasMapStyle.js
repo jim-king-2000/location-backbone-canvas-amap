@@ -7,7 +7,9 @@ export class CanvasMapStyle extends Component {
     return <Select
       options={['全图', '底图']}
       value='全图'
-      onChange={() => {}}
+      onChange={() => {
+        console.log(__map__.getFeatures())
+      }}
     />;
   }
 }
