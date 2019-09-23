@@ -10,7 +10,7 @@ export class CanvasMapStyle extends Component {
       onChange={({ option }) => {
         console.log(option, __map__.getFeatures())
         __map__.setFeatures(option === '全图' ?
-          ['bg', 'road', 'building', 'point'] : ['bg']);
+          'all' : ['bg']);
         this.forceUpdate();
       }}
     />;
