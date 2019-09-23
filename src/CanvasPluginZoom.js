@@ -2,6 +2,7 @@ import React from 'react';
 import { Box, Button, CheckBox } from 'grommet';
 import { Home, Add, Subtract } from 'grommet-icons';
 import { observer } from 'mobx-react';
+import { CanvasMapStyle } from './CanvasMapStyle';
 import HalBMap from '../hal/HalBMap';
 
 export const CanvasPluginZoom = observer(
@@ -17,6 +18,7 @@ export const CanvasPluginZoom = observer(
           onClick={() => halMap.zoomOut()} />
         <CheckBox toggle label='跟踪模式' checked={tracingMode}
           onChange={onChange} />
+        <CanvasMapStyle __map__={__map__} />
       </Box>
     );
   }
