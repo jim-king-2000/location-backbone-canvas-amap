@@ -3,10 +3,11 @@ import { Select } from 'grommet';
 
 export class CanvasMapStyle extends Component {
   render() {
-    <Select
+    const __map__ = this.props.__map__;
+    return <Select
       options={['全图', '底图']}
       value='全图'
       onChange={() => {}}
-    />
+    />;
   }
 }
