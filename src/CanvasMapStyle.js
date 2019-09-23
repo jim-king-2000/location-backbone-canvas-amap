@@ -11,7 +11,7 @@ export class CanvasMapStyle extends Component {
         __map__.setFeatures(option === '全图' ?
           ['bg', 'road', 'building', 'point'] : ['bg']);
         console.log(option, __map__.getFeatures())
-        this.setState({ state: this.state });
+        this.forceUpdate();
       }}
     />;
   }
