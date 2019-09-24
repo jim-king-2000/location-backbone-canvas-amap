@@ -2,8 +2,8 @@ import React from 'react';
 import { Map } from 'react-amap';
 import { Box, Text } from 'grommet';
 
-export const CanvasContainer = ({ children, ...props }) => (
-  <Map version='1.4.15' {...props}>
+export const CanvasContainer = ({ mapKey, children, ...props }) => (
+  <Map version='1.4.15' amapkey={mapKey} {...props}>
     {children}
     <Box style={{
       position: 'absolute',
