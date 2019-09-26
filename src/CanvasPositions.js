@@ -17,7 +17,7 @@ export const CanvasPositions = observer(
             fill={colorPool[p.colorIndex % colorPool.length]}
           />)}
           title={p.isOnline ? '在线' : '离线'}
-          anchor='center'
+          offset={[-15, -15]}
           zIndex={150}
           position={{
             latitude: p.latitude,
