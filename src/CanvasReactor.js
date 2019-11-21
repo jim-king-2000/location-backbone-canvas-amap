@@ -17,7 +17,7 @@ export class CanvasReactor extends Component {
     const halMap = new HalBMap(this.props.__map__);
     const isMarkersInViewport = halMap.isInView(this.props.markers);
     if (!isMarkersInViewport) {
-      halMap.setFitView();
+      setTimeout(() => halMap.setFitView());
     }
     return null;
   }
