@@ -19,9 +19,5 @@
   "homepage": "https://github.com/jim-king-2000/location-backbone-canvas-amap#readme",
   "dependencies": {
     "react-amap": "^1.2.8"
-  },
-  "peerDependencies": {
-    "location-backbone-canvas": "git+https://github.com/jim-king-2000/location-backbone-canvas.git",
-    "mobx-react": "^6.1.1"
   }
 }
